@@ -7,3 +7,5 @@
     `go run worker/server/worker.go -listen_port 40000`
 5. 启动main
     `go run main/main.go -itemSaver_host ":30000" -worker_host ":40000"`
+6. 启动搜索结果展示web
+   `go run frontend/starter.go`
