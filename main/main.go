@@ -36,7 +36,6 @@ func main() {
 		panic(err)
 	}
 
-	// type ProcessChan chan engine.Processor
 	pools := createProcessorPool(workerHosts)
 	processor := worker.CreateProcessor(pools)
 

@@ -16,7 +16,6 @@ type Processor func(types.Request) (types.ParseResult, error)
 
 type Scheduler interface {
 	Submit(types.Request)
-	ConfigureMasterWorkerChan(chan types.Request)
 	WorkerReady(r chan types.Request)
 	Run()
 }

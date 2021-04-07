@@ -11,10 +11,6 @@ func (s *QueuedScheduler) Submit(r types.Request) {
 	s.requesterChan <- r
 }
 
-func (s *QueuedScheduler) ConfigureMasterWorkerChan(r chan types.Request) {
-
-}
-
 func (s *QueuedScheduler) WorkerReady(r chan types.Request) {
 	s.workerChan <- r
 }

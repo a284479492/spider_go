@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"../../../crawler/engine"
-	"../../../crawler/model"
-	"../../config"
-	"../../rpcsupport"
+	"crawler/config"
+	"crawler/model"
+	"crawler/rpcsupport"
+	"crawler/types"
 )
 
 func TestItemSaver(t *testing.T) {
@@ -24,7 +24,7 @@ func TestItemSaver(t *testing.T) {
 		panic(err)
 	}
 	//call server
-	item := engine.Item{
+	item := types.Item{
 		Url:  "http://localhost:8080/mock/album.zhenai.com/u/6466817866957127625",
 		Id:   "6466817866957127625",
 		Type: "zhenai",
